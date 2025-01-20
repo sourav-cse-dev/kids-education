@@ -8,21 +8,32 @@
 }
 
 /* shared styles starts here */
-.flex-row-center {
+.flex-row {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .flex-row-space-between {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
-.flex-column-center {
+.flex-column {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+.flex-column-space-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text-style-lg {
+  color: black;
+  font-family: "Quicksand";
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .text-style-md {
   color: rgb(255, 255, 255);
@@ -33,18 +44,22 @@
   letter-spacing: 0%;
   text-align: center;
 }
+.text-style-sm {
+  color: rgb(17, 17, 17);
+  font-family: "Quicksand";
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0%;
+  text-align: left;
+}
 .button {
   width: 197px;
   height: 50px;
   padding: 10px;
   border: none;
   border-radius: 12px;
-  background: rgb(254, 163, 1);
   text-align: center;
-}
-.button:hover {
-  background-color: rgb(0, 150, 136);
-  cursor: pointer;
 }
 /* shared styles ends here */
 
@@ -55,8 +70,11 @@
   margin: 0 auto;
   padding: 20px 0;
   background-color: white;
+  align-items: center;
 }
 .nav-header {
+  display: flex;
+  align-items: center;
   gap: 0.75rem;
 }
 .nav-logo {
@@ -73,6 +91,7 @@
   text-align: left;
 }
 .nav-links {
+  align-items: center;
   gap: 2rem;
 }
 .nav-links li:hover {
@@ -96,19 +115,56 @@
 .nav-links > li > a {
   text-decoration: none;
 }
-nav button {
-  color: rgb(0, 106, 80);
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  padding: 15px 30px;
-  border: 1px solid rgb(0, 106, 80);
-  border-radius: 8px;
-  background-color: white;
+
+#nav-btn {
+  background: rgb(254, 163, 1);
 }
-nav button:hover {
-  background-color: #c6e4d6;
+
+#nav-btn:hover {
+  background-color: rgb(5, 212, 223);
   cursor: pointer;
 }
+
 /* nav-bar section styles ends here */
+
+/* banner section styles starts here */
+header {
+  max-width: 1160px;
+  height: 560px;
+  margin: 0 auto;
+  border-radius: 1.5rem;
+  gap: 3.125rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .banner-container{
+    display: flex;
+    flex-direction: column;
+    gap: 
+} */
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#banner-btn {
+  background: black;
+}
+
+#banner-btn:hover {
+  background-color: rgb(1, 172, 253);
+  cursor: pointer;
+}
+
+#empowring {
+  color: rgb(1, 172, 253);
+}
+#vision {
+  color: rgb(254, 163, 1);
+}
+
+/* banner section styles ends here */
