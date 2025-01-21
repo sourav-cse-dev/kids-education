@@ -66,7 +66,6 @@
 /* nav-bar section styles starts here */
 .nav-bar {
   max-width: 1160px;
-  height: 102px;
   margin: 0 auto;
   padding: 20px 0;
   background-color: white;
@@ -98,7 +97,6 @@
   font-weight: 600;
   transform: scale(1.2);
 }
-
 #home {
   color: rgb(254, 163, 1);
 }
@@ -111,18 +109,15 @@
 #admission {
   color: rgb(93, 88, 239);
 }
-
 .nav-links > li > a {
   text-decoration: none;
 }
-
 #nav-btn {
   background: rgb(254, 163, 1);
 }
 #nav-ham-btn {
   display: none;
 }
-
 #nav-btn:hover {
   background-color: rgb(5, 212, 223);
   cursor: pointer;
@@ -131,119 +126,135 @@ hr {
   display: none;
   border: 0.5px solid rgb(254, 163, 1);
 }
-
 /* nav-bar section styles ends here */
 
 /* banner section styles starts here */
 header {
   max-width: 1160px;
-  height: 560px;
   margin: 0 auto;
   border-radius: 1.5rem;
   gap: 3.125rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-/* .banner-container{
-    display: flex;
-    flex-direction: column;
-    gap: 
-} */
 .banner-content {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-
 #banner-btn {
   background: black;
 }
-
 #banner-btn:hover {
   background-color: rgb(1, 172, 253);
   cursor: pointer;
 }
-
 #empowring {
   color: rgb(254, 163, 1);
 }
 #vision {
   color: rgb(1, 172, 253);
 }
-
 /* banner section styles ends here */
 
 /* curriculam section stylus starts here */
 .curriculam-container {
-  border: 1px solid red;
-  max-width: 1160px;
-  height: 879px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5rem;
+  background-image: url("./assets/bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+.curriculam-title {
+  color: rgb(0, 0, 0);
+  font-family: "Quicksand";
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.65;
+  letter-spacing: 0%;
+  text-align: center;
 }
 .curriculam-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1.75rem;
+  gap: 2rem;
 }
-.curriculam-card-1 {
+.curriculam-card {
   max-width: 367.8px;
   height: 476.78px;
-
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  text-align: center;
+}
+.curriculam-card > img {
+  max-width: 136.76px;
+  height: 136.76px;
+}
+#card-1 {
   border: 0.94px solid rgb(222, 245, 255);
-  border-radius: 18.86px;
-  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
   background: linear-gradient(180deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-  text-align: center;
 }
-
-.curriculam-card-2 {
-  max-width: 367.8px;
-  height: 476.78px;
-
+#card-2 {
   border: 0.94px solid rgb(255, 244, 220);
-  border-radius: 18.86px;
-  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
   background: linear-gradient(180deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
-  text-align: center;
 }
-.curriculam-card-3 {
-  max-width: 367.8px;
-  height: 476.78px;
-
+#card-3 {
   border: 0.94px solid rgb(242, 232, 255);
-  border-radius: 18.86px;
-  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
   background: linear-gradient(180deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2.5rem;
+}
+.card-title {
+  color: rgb(0, 0, 0);
+  font-family: "Quicksand";
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0%;
   text-align: center;
 }
-
+.card-description {
+  color: rgb(128, 128, 128);
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 0 20px;
+}
+.curriculam-card > button {
+  font-family: "Quicksand";
+  font-size: 15.09px;
+  font-weight: 700;
+  line-height: 28.3px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+#card-btn-1 {
+  color: rgb(100, 200, 255);
+}
+#card-btn-2 {
+  color: rgb(240, 170, 0);
+}
+#card-btn-3 {
+  color: rgb(135, 0, 255);
+}
 .arrow-buttons {
   display: flex;
   gap: 10px;
@@ -251,7 +262,6 @@ header {
   align-items: center;
   margin: 24px;
 }
-
 .arrow {
   width: 55px;
   height: 55px;
@@ -262,7 +272,6 @@ header {
   align-items: center;
   position: relative;
 }
-
 .arrow::before {
   content: "";
   display: block;
@@ -272,11 +281,9 @@ header {
   border-width: 2px 2px 0 0;
   position: absolute;
 }
-
 .left-arrow::before {
   transform: rotate(-135deg);
 }
-
 .right-arrow::before {
   transform: rotate(45deg);
 }
@@ -285,14 +292,19 @@ header {
 /* stories section styles starts here */
 .stories-container {
   border: 1px solid red;
-  max-width: 1160px;
-  height: 879px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 60px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5rem;
+
+  background: url("./assets/bg.png"), linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
 }
 /* stories section styles ends here */
 
@@ -328,7 +340,7 @@ footer {
 @media screen and (max-width: 576px) {
   /* nav-bar section */
   nav {
-    max-width: 100%;
+    max-width: 90%;
     height: 70px;
     padding: 12px 16px;
     justify-content: space-between;
@@ -346,6 +358,9 @@ footer {
   #nav-ham-btn {
     max-width: 100%;
     display: block;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
   }
   hr {
     display: block;
