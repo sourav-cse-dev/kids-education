@@ -161,10 +161,10 @@ header {
 }
 
 #empowring {
-  color: rgb(1, 172, 253);
+  color: rgb(254, 163, 1);
 }
 #vision {
-  color: rgb(254, 163, 1);
+  color: rgb(1, 172, 253);
 }
 
 /* banner section styles ends here */
@@ -203,6 +203,7 @@ header {
   gap: 2.5rem;
   text-align: center;
 }
+
 .curriculam-card-2 {
   max-width: 367.8px;
   height: 476.78px;
@@ -235,4 +236,79 @@ header {
   gap: 2.5rem;
   text-align: center;
 }
+
+.arrow-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 24px;
+}
+
+.arrow {
+  width: 55px;
+  height: 55px;
+  background-color: rgb(254, 163, 1);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.arrow::before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border: solid white;
+  border-width: 2px 2px 0 0;
+  position: absolute;
+}
+
+.left-arrow::before {
+  transform: rotate(-135deg);
+}
+
+.right-arrow::before {
+  transform: rotate(45deg);
+}
 /* curriculam section stylus ends here */
+
+/* stories section styles starts here */
+.stories-container {
+  border: 1px solid red;
+  max-width: 1160px;
+  height: 879px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+/* stories section styles ends here */
+
+/* footer section styles starts here */
+footer {
+  border: 1px solid red;
+  max-width: 100%;
+  height: 520px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(1, 172, 253);
+  gap: 5rem;
+}
+.footer-left-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-left-content > div > img {
+  width: 82.9px;
+  height: 81.65px;
+  background: white;
+}
+/* footer section styles ends here */
