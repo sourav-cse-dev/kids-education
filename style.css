@@ -16,16 +16,6 @@
   display: flex;
   justify-content: space-between;
 }
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.flex-column-space-between {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
 .text-style-lg {
   color: black;
   font-family: "Quicksand";
@@ -272,6 +262,10 @@ header {
   align-items: center;
   position: relative;
 }
+.arrow:hover {
+  background-color: rgb(5, 212, 223);
+  cursor: pointer;
+}
 .arrow::before {
   content: "";
   display: block;
@@ -299,7 +293,6 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 5rem;
-
   background: url("./assets/bg.png"), linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
   background-position: center;
   background-repeat: no-repeat;
@@ -341,14 +334,12 @@ footer {
   /* nav-bar section */
   nav {
     max-width: 90%;
-    height: 70px;
     padding: 12px 16px;
     justify-content: space-between;
   }
   .nav-text {
     display: none;
   }
-
   .nav-links {
     display: none;
   }
@@ -368,8 +359,6 @@ footer {
   /* banner section */
   header {
     width: 100%;
-    height: 725px;
-    margin-top: 130px;
     padding: 20px 5px;
     flex-direction: column-reverse;
     justify-content: center;
@@ -387,5 +376,17 @@ footer {
   }
   #banner-btn {
     text-align: center;
+  }
+  /* curriculum section */
+  .curriculam-title {
+    display: flex;
+  }
+  .curriculam-content {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .arrow-buttons {
+    display: none;
   }
 }
