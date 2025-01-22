@@ -12,6 +12,8 @@
   display: flex;
   justify-content: center;
 }
+.nav-header {
+}
 .flex-row-space-between {
   display: flex;
   justify-content: space-between;
@@ -118,6 +120,23 @@ hr {
   border: 0.5px solid rgb(254, 163, 1);
 }
 /* nav-bar section styles ends here */
+
+/* marquee section styles starts here */
+.marquee-container {
+  background-color: #fef3c7;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.marquee-container span {
+  display: inline-block;
+  color: #4caf50;
+}
+/* marquee section styles ends here */
 
 /* banner section styles starts here */
 header {
@@ -544,6 +563,7 @@ footer {
     display: none;
   }
   #nav-ham-btn {
+    margin-right: 10px;
     max-width: 100%;
     display: block;
     color: white;
@@ -552,6 +572,10 @@ footer {
   }
   hr {
     display: block;
+  }
+  /* marquee section */
+  .marquee-container {
+    margin-top: 20px;
   }
   /* banner section */
   header {
